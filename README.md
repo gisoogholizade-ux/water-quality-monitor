@@ -2,9 +2,9 @@
 
 سامانه سبک ثبت و تحلیل داده‌های کیفیت آب — پروژه تیم Nexora.
 
-## وضعیت فعلی: 20%
+## وضعیت فعلی: 40%
 
-مرحله اول شامل راه‌اندازی پروژه، مدل داده، ثبت اندازه‌گیری و داشبورد اولیه است.
+تا این مرحله هسته سامانه، ثبت اندازه‌گیری، داشبورد، سوابق، جستجو و فیلتر زمانی پیاده‌سازی شده است.
 
 ### فناوری‌ها
 - Java 21
@@ -16,32 +16,27 @@
 - Bootstrap RTL
 - Maven
 
-### پارامترهای اندازه‌گیری
-- Temperature
-- pH
-- Dissolved Oxygen (DO)
-- Electrical Conductivity (EC)
-- Sampling location
-- Measurement date/time
-- Notes
+### قابلیت‌های فعلی
+- ثبت Temperature، pH، DO و EC
+- ثبت محل، زمان و توضیحات نمونه
+- داشبورد آخرین اندازه‌گیری‌ها
+- صفحه کامل سوابق
+- جستجو بر اساس محل
+- فیلتر بر اساس بازه زمانی
+- حذف رکورد با تأیید کاربر
 
 ### اجرا
-برای اجرای سریع با پروفایل توسعه:
-
 ```bash
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
-سپس:
-`http://localhost:8080`
-
-برای MySQL پروفایل `mysql` را فعال کنید و تنظیمات اتصال را در `application-mysql.properties` قرار دهید.
+سپس `http://localhost:8080` را باز کنید.
 
 ## Roadmap
 - [x] 20% — Core setup + measurement registration + initial dashboard
-- [ ] 40% — History, search and filters
+- [x] 40% — History, search and filters
 - [ ] 60% — Charts and analysis
 - [ ] 80% — Thresholds, alerts and Excel export
 - [ ] 100% — Testing, documentation and delivery
 
-جزئیات مرحله اول در [PROGRESS_20.md](PROGRESS_20.md) آمده است.
+گزارش‌ها: [20%](PROGRESS_20.md) · [40%](PROGRESS_40.md)
