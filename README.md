@@ -2,15 +2,19 @@
 
 سامانه سبک ثبت و تحلیل داده‌های کیفیت آب — پروژه تیم Nexora.
 
-## وضعیت فعلی: 60%
+## وضعیت فعلی: 80%
 
 ### قابلیت‌های پیاده‌سازی‌شده
 - ثبت pH، دما، DO و EC همراه محل، زمان و توضیحات
-- داشبورد و آخرین اندازه‌گیری‌ها
-- صفحه سوابق، جستجو و فیلتر بازه زمانی
+- داشبورد و سوابق اندازه‌گیری
+- جستجو و فیلتر بازه زمانی
 - حذف رکورد
-- محاسبه میانگین شاخص‌ها و آمار خلاصه
-- نمودار روند pH، دما، DO و EC با Chart.js
+- آمار خلاصه و نمودارهای روند با Chart.js
+- تشخیص مقادیر خارج از محدوده‌های مرجع نمونه
+- صفحه هشدارها
+- خروجی CSV سازگار با Excel
+
+> محدوده‌های هشدار نسخه نمونه اولیه، مقادیر مرجع نمایشی هستند و برای کاربرد واقعی باید بر اساس استاندارد و نوع مصرف آب تنظیم شوند.
 
 ### فناوری‌ها
 Java 21 · Spring Boot 3 · Spring MVC · Thymeleaf · Spring Data JPA · MySQL/H2 · Bootstrap RTL · Chart.js · Maven
@@ -25,7 +29,7 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 - [x] 20% — Core setup + registration + dashboard
 - [x] 40% — History, search and filters
 - [x] 60% — Charts and analysis
-- [ ] 80% — Thresholds, alerts and Excel export
+- [x] 80% — Reference thresholds, alerts and spreadsheet-friendly export
 - [ ] 100% — Testing, documentation and delivery
 
-گزارش‌ها: [20%](PROGRESS_20.md) · [40%](PROGRESS_40.md) · [60%](PROGRESS_60.md)
+گزارش‌ها: [20%](PROGRESS_20.md) · [40%](PROGRESS_40.md) · [60%](PROGRESS_60.md) · [80%](PROGRESS_80.md)
